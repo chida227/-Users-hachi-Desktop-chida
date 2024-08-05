@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+.post{
+    font-family: 'Cardo',serif;
+    color: #000;
+    min-height: 100%;
+    font-size: 75%;
+    font-weight: lighter;
+}
+
+/* ヘッダー -----------------------------------------------------*/
+.MainMenu{
+    background-image: url(../img/header_image3.jpg);
+    background-position: 0% 50%; 
+    background-size: cover;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.Logo{
+    padding: 10px 30px;
+}
+.Logo h1 a{
+    color: #fff;
+    font-family: 'Cardo',serif;
+}
+
+/* ナビゲーション */
+.area_nav_header{
+    display: flex;
+    padding-right: 5%;
+}
+
+/* リストナビ */
+.list_nav_header{
+    display: flex;
+    padding: 15px;
+}
+.list_nav_header > li + li {
+    margin-left: 40px;
+}
+.list_nav_header a{
+    color: #fff;
+    font: 500 15px/1em 'noto sans japanese',sans-serif;
+    text-decoration: none;
+}
+.list_nav_header li{
+    list-style: none;
+}
+.list_nav_header li :hover{
+    color: rgb(160, 160, 160);
+}
+
+@media screen and (max-width: 768px){
+    .area_nav_header{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .MainMenu{
+        background-image: url(../img/header_image3.jpg);
+        background-position: 50% 50%; 
+        background-size: cover;
+        line-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section_wrapper{
+        margin-top: 70px;
+    }
+}
+
+/* リリース情報 ------------------------------------------------*/
+.title{
+    display: flex;
+    justify-content: center;
+}
+.swiper-container{
+    margin: 35px;
+    overflow: hidden;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid rgb(58, 57, 57);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.swiper-slide .txt{
+    padding: 20px;
+    margin-left: 3px;
+}
+.swiper-slide .txt h2{
+    color: #000000;
+    font-size: 20px;
+}
+.swiper-slide .txt p{
+    color: #000;
+    font-size: 12px;
+    line-height: 1.7;
+    align-items: flex-end;
+}
+.swiper-slide .date{
+    text-align: end;
+    padding-right: 15px;
+}
+.swiper-pagination{
+    position: relative !important;
+    padding-top: 15px;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: 115% !important;
+}
+.link_decolation{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .swiper-slide .txt h2{
+        font-size: 13px !important;
+    }
+    .swiper-slide .txt p{
+        font-size: 9px;
+    }
+}
+/* PROFILE --------------------------------------------*/
+.profile_wrapper{
+    align-items: center;
+    margin: 30px 0;
+}
+.profile_background{
+    background-color:  #E9DFCA;
+}
+@media screen and (min-width:480px){
+    .profile_background{
+        height: 500px;
+    }
+}
+    
+.twocolumns{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+/* singleimage 設定 */
+.profile_icon{
+    height: 350px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.profile_icon img{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0%;
+}
+/* profile 設定 */
+.profile_wrapper .profile_text{
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 0em;
+    font-family: "Didact Gothic",sans-serif;
+}
+.pbElements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* モバイルでは縦並び */
+@media screen and (max-width:480px){
+    .post .twocolumns{
+        display: block;
+    }
+    .twocolumns .right :first-child, 
+    .twocolumns .left :first-child{
+        margin-bottom: 1.5em;
+    }
+    .twocolumns .right, 
+    .twocolumns .left{
+        width: 100%!important;
+    }
+    .profile_text{
+        margin-top: 30px;
+    }
+    .profile_background{
+        background-color:  #E9DFCA;
+    }
+    }
+/* INTRODUCTION----------------------------------------*/
+.music_icon{
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+.music_introduction{
+    display: flex;
+}
+.anti_items{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.music_text{
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 0em;
+    font-family: "Didact Gothic",sans-serif;
+}
+.music_text_wrapper{
+    padding-top: 20px;
+}
+.m_link{
+    padding-top: 20px;
+    text-align: right;
+}
+.m_link a{
+    font-size: 15px;
+    color: rgb(87, 120, 161);
+}
+@media screen and (max-width:480px){
+    .music_icon{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* MusicVideo------------------------------------------*/
+.mv_background_img{
+    background-image: url(../img/mv_background_img.jpg);
+}
+
+/* CONTACT---------------------------------------------*/
+.contact_message{
+    color: #000;
+    margin: 20px;
+}
+.contact_icon{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contact_icon a{
+    color: rgb(103, 103, 103);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.contact_icon a :hover{
+    color: rgb(27, 27, 27);
+}
+
+/* -- フッター ------------------------------------------------------------------------------ */
+.fotter{
+    background-image: url(../img/footer_image.jpg);
+    background-position: 0% 100%; 
+    background-size: cover;
+    line-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.fotter .license a{
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------------*/
+/* ページ全体に関わるcssの設定 */
+body{
+    font-family: 'Noto Sans JP',sans-serif;
+    /* Note Sans JPのレギュラーウエイトを設定 */
+    font-weight: 400;
+    /* 背景グリッド */
+    background-image: linear-gradient(90deg,transparent 47px, rgba(203, 171, 140, 0.51) 48px),linear-gradient(0deg,transparent 47px, rgba(203, 171, 140, 0.51) 48px);
+    background-color: rgb(253, 245, 236);    
+    background-size: 48px 48px;
+    background-attachment: fixed;
+}
+
+/* 主な太字タグの太字ウエイト設定 */
+h1,h2,h3,h4,h5,h6,th,strong{
+    font-weight: 700;
+}
+
+/* 親要素の幅に合わせて画像を伸縮させるスタイル */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* 標準的なリンクのテキスト色 */
+a{
+    color: rgb(0, 0, 0);
+}
+
+/* レスポンシブデザイン */
+html *, ::before, ::after{
+    box-sizing: border-box;
+}
+
+/* 標準的なフォントの種類とフォントサイズ */
+html{
+    font-size: 14px;
+}
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.section_wrapper{
+    margin-top: 70px;
+}
